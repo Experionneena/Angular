@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<title>Angular.js Example</title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+	<script>
+	function NameCtrl($scope){
+		$scope.firstname = 'Neena';
+		$scope.lastname = 'Augustine';
+	}
+	</script>
+</head>
+<body ng-controller="NameCtrl">
+	First name:<input ng-model="firstname" type="text"/>
+	<br>
+	Last name:<input ng-model="lastname" type="text"/>
+	<br>
+	
+	Hello {{firstname}}  {{lastname}}
+</body>
+</html>
