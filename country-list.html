@@ -1,3 +1,22 @@
+<!-- <h1>
+<ul>
+  <p>Hi neena this is the country list page</p>
+  <li ng-repeat="country in countries">{{country.name}}</li>
+</ul>
+
 <ul>
   <li ng-repeat="country in countries">{{country.name}}</li>
+</ul>
+</h1>
+<ul>
+  <li ng-repeat="country in countries">
+    <a href="#/{{country.name}}">{{country.name}}</a>
+  </li>
+</ul> -->
+
+
+<ul>
+  <li ng-repeat="country in countries">
+    <a href="#/{{country.id}}">{{country.name}}</a>
+  </li>
 </ul>
